@@ -22,6 +22,30 @@ class mod_tristybresponsivetabsHelper{
 		return $tabs;
 	}
 
+	public function addBreakpoints($params){
+		
+		$pixelbreakpoints = array(192, 368, 432);
+		$rembreakpoints;
+		$allbreakpoints;
+		
+		if($params->get('first_break')){
+			$breakpoints[0] = $params->get('first_break');
+		}
+
+		if($params->get('second_break')){
+			$breakpoints[1] = $params->get('second_break');
+		}
+
+		if($params->get('third_break')){
+			$breakpoints[2] = $params->get('third_break');
+		}
+
+		$allbreakpoints[0] = ($params->get('first_break')/16 * 1);
+
+		return $allbreakpoints;
+
+	}
+
 	public function supportAwfulBrowser($params){
 		if($params->get('ie_fallback')){
 			$doc = &JFactory::getDocument();

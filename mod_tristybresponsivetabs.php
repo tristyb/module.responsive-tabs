@@ -19,6 +19,8 @@ $doc->addStyleSheet(JURI::base(true) . '/modules/mod_tristybresponsivetabs/asset
 // get the content for the tabs (passing in paramaters)
 $tab_content = mod_tristybresponsivetabsHelper::getContent($params);
 
+$breaks = mod_tristybresponsivetabsHelper::addBreakpoints($params);
+
 // do we need ie8? Run that method and pass in the params
 mod_tristybresponsivetabsHelper::supportAwfulBrowser($params);
 

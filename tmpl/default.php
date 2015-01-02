@@ -4,6 +4,8 @@
 
 defined('_JEXEC') or die;
 
+print_r($breaks);
+
 ?>
 
 <div id="responsive-tabs">

@@ -1,0 +1,53 @@
+#responsive-tabs {
+  counter-reset: section; }
+  #responsive-tabs *, #responsive-tabs *:before, #responsive-tabs *:after {
+    box-sizing: border-box; }
+  #responsive-tabs .tab-content-item {
+    display: none; }
+  #responsive-tabs #tab1:checked ~ .tab-content #content1, #responsive-tabs #tab1.checked ~ .tab-content #content1, #responsive-tabs #tab2:checked ~ .tab-content #content2, #responsive-tabs #tab2.checked ~ .tab-content #content2, #responsive-tabs #tab3:checked ~ .tab-content #content3, #responsive-tabs #tab3.checked ~ .tab-content #content3, #responsive-tabs #tab4:checked ~ .tab-content #content4, #responsive-tabs #tab4.checked ~ .tab-content #content4, #responsive-tabs #tab5:checked ~ .tab-content #content5, #responsive-tabs #tab5.checked ~ .tab-content #content5 {
+    display: block; }
+  #responsive-tabs input[type="radio"] {
+    display: none; }
+  #responsive-tabs label {
+    padding: 0.5em;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    counter-increment: section;
+    background: #eee;
+    border: 1px solid transparent;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: border 0.3s ease-in-out, font-size 0.3s ease-in-out;
+            transition: border 0.3s ease-in-out, font-size 0.3s ease-in-out; }
+    #responsive-tabs label:before {
+      display: block;
+      content: counter(section); }
+    #responsive-tabs label span {
+      display: none; }
+  #responsive-tabs input[type="radio"]:checked + label, #responsive-tabs input[type="radio"].checked + label {
+    background: #ddd;
+    border-top: 3px solid #2ecc75;
+    border-bottom: 3px solid #2ecc75; }
+  #responsive-tabs label:hover, #responsive-tabs label:active, #responsive-tabs label:focus {
+    background: #ddd; }
+  #responsive-tabs .tab-content {
+    padding-top: 1em; }
+  @media only screen and (min-width: 12em) {
+    #responsive-tabs label {
+      display: inline-block;
+      margin-left: -5px;
+      border-bottom: 1px solid transparent; }
+    #responsive-tabs input[type="radio"]:checked + label, #responsive-tabs input[type="radio"].checked + label {
+      border-bottom: 1px solid transparent; } }
+  @media only screen and (min-width: 23em) {
+    #responsive-tabs label {
+      padding: 1em;
+      font-size: 0.85em; }
+      #responsive-tabs label:before {
+        display: none; }
+      #responsive-tabs label span {
+        display: block; } }
+  @media only screen and (min-width: 27em) {
+    #responsive-tabs label {
+      font-size: 1em; } }

@@ -1,0 +1,100 @@
+#responsive-tabs{
+	*, *:before, *:after{
+		box-sizing: border-box;
+	}
+
+	counter-reset: section;
+
+	.tab-content-item{
+		display: none;
+	}
+
+	#tab1:checked ~ .tab-content #content1,
+	#tab1.checked ~ .tab-content #content1,
+	#tab2:checked ~ .tab-content #content2,
+	#tab2.checked ~ .tab-content #content2,
+	#tab3:checked ~ .tab-content #content3,
+	#tab3.checked ~ .tab-content #content3,
+	#tab4:checked ~ .tab-content #content4,
+	#tab4.checked ~ .tab-content #content4,
+	#tab5:checked ~ .tab-content #content5,
+	#tab5.checked ~ .tab-content #content5{
+		display: block;
+	}
+
+	input[type="radio"]{
+		display: none;
+	}
+
+	label{
+		padding: 0.5em;
+		display: block;
+		text-align: center;
+		cursor: pointer;
+		counter-increment: section;
+		background: #eee;
+		border: 1px solid transparent;
+		border-top: 3px solid transparent;
+		border-bottom: 3px solid transparent;
+		transition: border .3s ease-in-out, font-size .3s ease-in-out;
+
+		&:before{
+			display: block;
+			content: counter(section);
+		}
+
+		span{
+			display: none;
+		}
+	}
+
+	input[type="radio"]:checked + label,
+	input[type="radio"].checked + label{
+		background: #ddd;
+		border-top: 3px solid #2ecc75;
+		border-bottom: 3px solid #2ecc75;
+	}
+
+	label:hover, label:active, label:focus{
+		background: #ddd;
+	}
+
+	.tab-content{
+		padding-top: 1em;
+	}
+
+	// put a readme on the site that explains how to change these
+	@media only screen and (min-width: 12em){
+		label{
+			display: inline-block;
+			margin-left: -5px;
+			border-bottom: 1px solid transparent;
+		}
+
+		input[type="radio"]:checked + label,
+		input[type="radio"].checked + label{
+			border-bottom: 1px solid transparent;
+		}
+	}
+
+	@media only screen and (min-width: 23em){
+		label{
+			padding: 1em;
+			font-size: 0.85em;
+
+			&:before{
+				display: none;
+			}
+
+			span{
+				display: block;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 27em){
+		label{
+			font-size: 1em;
+		}
+	}
+}

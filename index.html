@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>responsive tabs</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="HandheldFriendly" content="true"/>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+	
+	<style type="text/css">
+		html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+		body{line-height:1}
+		article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+		nav ul{list-style:none}
+		blockquote,q{quotes:none}
+		blockquote:before,blockquote:after,q:before,q:after{content:none}
+		a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+		ins{background-color:#ff9;color:#000;text-decoration:none}
+		mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+		del{text-decoration:line-through}
+		abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+		table{border-collapse:collapse;border-spacing:0}
+		hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+		input,select{vertical-align:middle}
+		html{background: #eee;padding: 1em; font-family: sans-serif;}
+		body{ background: #fff;padding: 1em;}
+		h1{
+			font-size: 3em;
+		}
+	</style>
+
+	<link href="/assets/css/style.css" type="text/css" rel="stylesheet"/>
+	<!-- <script type="text/javascript" src="/assets/js/scripts.js"></script> -->
+</head>
+<body>
+	<div id="responsive-tabs">
+		<input type="radio" name="tabs" checked id="tab1"/>		
+		<label for="tab1"><span>Tab1</span></label>
+		<input type="radio" name="tabs" id="tab2"/>
+		<label for="tab2"><span>Tab2</span></label>
+		<input type="radio" name="tabs" id="tab3"/>
+		<label for="tab3"><span>Tab3</span></label>
+		<input type="radio" name="tabs" id="tab4"/>
+		<label for="tab4"><span>Tab4</span></label>
+		<input type="radio" name="tabs" id="tab5"/>
+		<label for="tab5"><span>Tab5</span></label>
+		
+		<div class="tab-content">
+			<div id="content1" class="tab-content-item">
+				<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
+			</div>
+			<div id="content2" class="tab-content-item">
+				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+			</div>
+			<div id="content3" class="tab-content-item">
+				<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue.</p>
+			</div>
+			<div id="content4" class="tab-content-item">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			</div>
+			<div id="content5" class="tab-content-item">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

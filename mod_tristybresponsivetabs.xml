@@ -8,7 +8,7 @@
 	<authorEmail>tristan@tristanbrook.es</authorEmail>
 	<authorURL>http://tristanbrook.es</authorURL>
 	<version>1.0</version>
-	<description>MOD_TRISTYBRESPONSIVETABS</description>
+	<description>MOD_TRISTYBRESPONSIVETABS_DESC</description>
 
 	<files>
 		<filename>mod_tristybresponsivetabs.xml</filename>
@@ -35,8 +35,28 @@
 			</fieldset>
 
 			<fieldset name="tabcontent1" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_ONE">
-				<field name="tab1" type="text" default="" label="MOD_TRISTYBRESPONSIVETABS_TAB1_LABEL" description="MOD_TRISTYBRESPONSIVETABS_TAB1_DESC" />
-				<field name="content1" type="editor" default="" label="MOD_TRISTYBRESPONSIVETABS_CONTENT1_LABEL" description="MOD_TRISTYBRESPONSIVETABS_CONTENT1_DESC"  filter="safehtml" />
+				<field name="tab1" type="text" default="" label="MOD_TRISTYBRESPONSIVETABS_TAB_ONE_LABEL" description="MOD_TRISTYBRESPONSIVETABS_TAB_ONE_DESC" />
+				<field name="content1" type="editor" default="" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_ONE_LABEL" description="MOD_TRISTYBRESPONSIVETABS_CONTENT_ONE_DESC"  filter="safehtml" />
+			</fieldset>
+
+			<fieldset name="tabcontent2" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_TWO">
+				<field name="tab2" type="text" default="" label="MOD_TRISTYBRESPONSIVETABS_TAB_TWO_LABEL" description="MOD_TRISTYBRESPONSIVETABS_TAB_TWO_DESC" />
+				<field name="content2" type="editor" default="" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_TWO_LABEL" description="MOD_TRISTYBRESPONSIVETABS_CONTENT_TWO_DESC"  filter="safehtml" />
+			</fieldset>
+
+			<fieldset name="tabcontent3" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_THREE">
+				<field name="tab3" type="text" default="" label="MOD_TRISTYBRESPONSIVETABS_TAB_THREE_LABEL" description="MOD_TRISTYBRESPONSIVETABS_TAB_THREE_DESC" />
+				<field name="content3" type="editor" default="" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_THREE_LABEL" description="MOD_TRISTYBRESPONSIVETABS_CONTENT_THREE_DESC"  filter="safehtml" />
+			</fieldset>
+
+			<fieldset name="tabcontent4" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_FOUR">
+				<field name="tab4" type="text" default="" label="MOD_TRISTYBRESPONSIVETABS_TAB_FOUR_LABEL" description="MOD_TRISTYBRESPONSIVETABS_TAB_FOUR_DESC" />
+				<field name="content4" type="editor" default="" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_FOUR_LABEL" description="MOD_TRISTYBRESPONSIVETABS_CONTENT_FOUR_DESC"  filter="safehtml" />
+			</fieldset>
+
+			<fieldset name="tabcontent5" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_FIVE">
+				<field name="tab5" type="text" default="" label="MOD_TRISTYBRESPONSIVETABS_TAB_FIVE_LABEL" description="MOD_TRISTYBRESPONSIVETABS_TAB_FIVE_DESC" />
+				<field name="content5" type="editor" default="" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_FIVE_LABEL" description="MOD_TRISTYBRESPONSIVETABS_CONTENT_FIVE_DESC"  filter="safehtml" />
 			</fieldset>
 
 			<fieldset name="advanced">

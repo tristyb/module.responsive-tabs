@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 				tasks: ["libsass", "autoprefixer"]
 			},
 			compression: {
-				files: ['assets/**/*', 'language/**/*', 'tmpl/**/*', 'helper.php', 'mod_fancypantsaccordion.php', 'mod_fancypantsaccordion.xml'],
+				files: ['assets/**/*', 'language/**/*', 'tmpl/**/*', 'helper.php', 'mod_tristybresponsivetabs.php', 'mod_tristybresponsivetabs.xml'],
 				tasks: ["compress"]
 			}
 		},
@@ -86,12 +86,13 @@ module.exports = function(grunt) {
 					{expand: true, src: ['assets/css/index.html'], dest: '/'},
 					{expand: true, src: ['assets/js/scripts.min.js'], dest: '/'},
 					{expand: true, src: ['assets/js/index.html'], dest: '/'},
+					{expand: true, src: ['assets/index.html'], dest: '/'},
 					{expand: true, src: ['language/**'], dest: '/'},
 					{expand: true, src: ['tmpl/**'], dest: '/'},
 					{expand: true, src: ['helper.php'], dest: '/'},
 					{expand: true, src: ['index.html'], dest: '/'},
-					{expand: true, src: ['mod_fancypantsaccordion.php'], dest: '/'},
-					{expand: true, src: ['mod_fancypantsaccordion.xml'], dest: '/'},
+					{expand: true, src: ['mod_tristybresponsivetabs.php'], dest: '/'},
+					{expand: true, src: ['mod_tristybresponsivetabs.xml'], dest: '/'},
 				]
 			}
 		}

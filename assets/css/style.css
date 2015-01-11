@@ -9,8 +9,10 @@
   #responsive-tabs input[type="radio"] {
     display: none; }
   #responsive-tabs label {
-    padding: 0.5em;
+    padding: 8px;
+    padding: 0.5rem;
     display: block;
+    margin-bottom: 0;
     text-align: center;
     cursor: pointer;
     counter-increment: section;
@@ -32,22 +34,5 @@
   #responsive-tabs label:hover, #responsive-tabs label:active, #responsive-tabs label:focus {
     background: #ddd; }
   #responsive-tabs .tab-content {
-    padding-top: 1em; }
-  @media only screen and (min-width: 12em) {
-    #responsive-tabs label {
-      display: inline-block;
-      margin-left: -5px;
-      border-bottom: 1px solid transparent; }
-    #responsive-tabs input[type="radio"]:checked + label, #responsive-tabs input[type="radio"].checked + label {
-      border-bottom: 1px solid transparent; } }
-  @media only screen and (min-width: 23em) {
-    #responsive-tabs label {
-      padding: 1em;
-      font-size: 0.85em; }
-      #responsive-tabs label:before {
-        display: none; }
-      #responsive-tabs label span {
-        display: block; } }
-  @media only screen and (min-width: 27em) {
-    #responsive-tabs label {
-      font-size: 1em; } }
+    padding-top: 16px;
+    padding-top: 1rem; }

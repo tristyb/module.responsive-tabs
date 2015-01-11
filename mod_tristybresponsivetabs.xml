@@ -28,17 +28,15 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="ie_fallback" type="radio" default="0" label="MOD_TRISTYBRESPONSIVETABS_IE_LABEL" description="MOD_TRISTYBRESPONSIVETABS_IE_DESC">
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
-			</fieldset>
-
-			<fieldset name="mediaqueries" label="MOD_TRISTYBRESPONSIVETABS_MEDIAQUERIES">
 				<field type="spacer" name="explanation" label="MOD_TRISTYBRESPONSIVETABS_MEDIAQUERIES_EXPLANATION"/>
 				<field name="first_break" type="text" default="192" label="MOD_TRISTYBRESPONSIVETABS_FIRST_MEDIA_QUERY_LABEL" description="MOD_TRISTYBRESPONSIVETABS_FIRST_MEDIA_QUERY_DESC"/>
 				<field name="second_break" type="text" default="368" label="MOD_TRISTYBRESPONSIVETABS_SECOND_MEDIA_QUERY_LABEL" description="MOD_TRISTYBRESPONSIVETABS_SECOND_MEDIA_QUERY_DESC"/>
 				<field name="third_break" type="text" default="432" label="MOD_TRISTYBRESPONSIVETABS_THIRD_MEDIA_QUERY_LABEL" description="MOD_TRISTYBRESPONSIVETABS_THIRD_MEDIA_QUERY_DESC"/>
+				<field type="spacer" name="explanationie" label="MOD_TRISTYBRESPONSIVETABS_IE_EXPLANATION"/>
+				<field name="ie_fallback" type="radio" default="0" label="MOD_TRISTYBRESPONSIVETABS_IE_LABEL" description="MOD_TRISTYBRESPONSIVETABS_IE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
 			</fieldset>
 
 			<fieldset name="tabcontent1" label="MOD_TRISTYBRESPONSIVETABS_CONTENT_ONE">

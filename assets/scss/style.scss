@@ -27,8 +27,10 @@
 	}
 
 	label{
-		padding: 0.5em;
+		padding: 8px;
+		padding: 0.5rem;
 		display: block;
+		margin-bottom: 0;
 		text-align: center;
 		cursor: pointer;
 		counter-increment: section;
@@ -60,41 +62,42 @@
 	}
 
 	.tab-content{
-		padding-top: 1em;
+		padding-top: 16px;
+		padding-top: 1rem;
 	}
 
 	// put a readme on the site that explains how to change these
-	@media only screen and (min-width: 12em){
-		label{
-			display: inline-block;
-			margin-left: -5px;
-			border-bottom: 1px solid transparent;
-		}
+	// @media only screen and (min-width: 12em){
+	// 	label{
+	// 		display: inline-block;
+	// 		margin-left: -5px;
+	// 		border-bottom: 1px solid transparent;
+	// 	}
 
-		input[type="radio"]:checked + label,
-		input[type="radio"].checked + label{
-			border-bottom: 1px solid transparent;
-		}
-	}
+	// 	input[type="radio"]:checked + label,
+	// 	input[type="radio"].checked + label{
+	// 		border-bottom: 1px solid transparent;
+	// 	}
+	// }
 
-	@media only screen and (min-width: 23em){
-		label{
-			padding: 1em;
-			font-size: 0.85em;
+	// @media only screen and (min-width: 23em){
+	// 	label{
+	// 		padding: 1em;
+	// 		font-size: 0.85em;
 
-			&:before{
-				display: none;
-			}
+	// 		&:before{
+	// 			display: none;
+	// 		}
 
-			span{
-				display: block;
-			}
-		}
-	}
+	// 		span{
+	// 			display: block;
+	// 		}
+	// 	}
+	// }
 
-	@media only screen and (min-width: 27em){
-		label{
-			font-size: 1em;
-		}
-	}
+	// @media only screen and (min-width: 27em){
+	// 	label{
+	// 		font-size: 1em;
+	// 	}
+	// }
 }

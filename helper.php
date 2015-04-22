@@ -4,10 +4,10 @@
 
 defined('_JEXEC') or die;
 
-class mod_tristybresponsivetabsHelper{
+class mod_webhausresponsivetabsHelper{
 
 	public function getContent($params){
-		
+
 		$tabs = array();
 
 		for($i = 1; $i <= 5; $i++){
@@ -23,11 +23,11 @@ class mod_tristybresponsivetabsHelper{
 	}
 
 	public function addBreakpoints($params){
-		
+
 		$pixelbreakpoints = array(192, 368, 432);
 		$rembreakpoints;
 		$allbreakpoints;
-		
+
 		if($params->get('first_break')){
 			$breakpoints[0] = $params->get('first_break');
 		}
@@ -116,13 +116,13 @@ class mod_tristybresponsivetabsHelper{
 	public function supportAwfulBrowser($params){
 		if($params->get('ie_fallback')){
 			$doc = &JFactory::getDocument();
-			
+
 			$jslink = '<!--[if lte IE 8]>' ."\n";
-			$jslink .= '<style type="text/js" href="/modules/mod_tristybresponsivetabs/assets/js/scripts.min.js" />'."\n";
+			$jslink .= '<style type="text/js" href="/modules/mod_webhausresponsivetabs/assets/js/scripts.min.js" />'."\n";
 			$jslink .= '<![endif]-->' ."\n";
- 
+
 			$doc->addCustomTag($jslink);
-		}		
+		}
 	}
 
 }

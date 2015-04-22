@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 				tasks: ["libsass", "autoprefixer"]
 			},
 			compression: {
-				files: ['assets/**/*', 'language/**/*', 'tmpl/**/*', 'helper.php', 'mod_tristybresponsivetabs.php', 'mod_tristybresponsivetabs.xml'],
+				files: ['assets/**/*', 'language/**/*', 'tmpl/**/*', 'helper.php', 'mod_webhausresponsivetabs.php', 'mod_webhausresponsivetabs.xml'],
 				tasks: ["compress"]
 			}
 		},
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 		compress: {
 			main: {
 				options: {
-					archive: "mod_tristybResponsiveTabs-x-x-x.zip",
+					archive: "mod_webhausResponsiveTabs-x-x-x.zip",
 					pretty: true,
 					mode: 'zip'
 				},
@@ -91,8 +91,8 @@ module.exports = function(grunt) {
 					{expand: true, src: ['tmpl/**'], dest: '/'},
 					{expand: true, src: ['helper.php'], dest: '/'},
 					{expand: true, src: ['index.html'], dest: '/'},
-					{expand: true, src: ['mod_tristybresponsivetabs.php'], dest: '/'},
-					{expand: true, src: ['mod_tristybresponsivetabs.xml'], dest: '/'},
+					{expand: true, src: ['mod_webhausresponsivetabs.php'], dest: '/'},
+					{expand: true, src: ['mod_webhausresponsivetabs.xml'], dest: '/'},
 				]
 			}
 		}

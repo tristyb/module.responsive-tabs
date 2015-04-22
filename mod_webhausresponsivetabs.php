@@ -2,7 +2,7 @@
 
 #@license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 
-/* tristyb's responsive tabs module */
+/* Webhaus responsive tabs module */
 
 defined('_JEXEC') or die;
 JHtml::_('behavior.framework', true);
@@ -14,18 +14,18 @@ require_once(dirname(__FILE__).'/helper.php');
 $doc =& JFactory::getDocument();
 
 // add stylesheet
-$doc->addStyleSheet(JURI::base(true) . '/modules/mod_tristybresponsivetabs/assets/css/style.css', 'text/css' );
+$doc->addStyleSheet(JURI::base(true) . '/modules/mod_webhausresponsivetabs/assets/css/style.css', 'text/css' );
 
 // get the content for the tabs (passing in paramaters)
-$tab_content = mod_tristybresponsivetabsHelper::getContent($params);
+$tab_content = mod_webhausresponsivetabsHelper::getContent($params);
 
-$breaks = mod_tristybresponsivetabsHelper::addBreakpoints($params);
+$breaks = mod_webhausresponsivetabsHelper::addBreakpoints($params);
 
 // do we need ie8? Run that method and pass in the params
-mod_tristybresponsivetabsHelper::supportAwfulBrowser($params);
+mod_webhausresponsivetabsHelper::supportAwfulBrowser($params);
 
 //keeps module class suffix even if templateer tries to stop it
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
 // get the template
-require(JModuleHelper::getLayoutPath('mod_tristybresponsivetabs'));
+require(JModuleHelper::getLayoutPath('mod_webhausresponsivetabs'));

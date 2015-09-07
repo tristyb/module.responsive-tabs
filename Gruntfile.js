@@ -19,10 +19,10 @@ module.exports = function(grunt) {
 		    all: ['assets/js/scripts.js']
 		},
 
-		libsass: {
+		sass: {
 			global: {
 				options: {
-					style: "compressed",
+					outputStyle: "compressed",
 					precision: 10
 				},
 				files: {
@@ -48,31 +48,13 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: ["assets/scss/*.scss"],
-				tasks: ["libsass", "autoprefixer"]
+				tasks: ["sass", "autoprefixer"]
 			},
 			compression: {
 				files: ['assets/**/*', 'language/**/*', 'tmpl/**/*', 'helper.php', 'mod_webhausresponsivetabs.php', 'mod_webhausresponsivetabs.xml'],
 				tasks: ["compress"]
 			}
 		},
-
-		// browserSync: {
-		//     dev: {
-		//         bsFiles: {
-		//             src : [
-		//             	'assets/scss/style.scss',
-		//             	'assets/js/scripts.js',
-		//             	'index.html'
-		//             ]
-		//         },
-		//         options: {
-		//             watchTask: true, // < VERY important
-		//             server: {
-		//             	baseDir: './'
-		//             }
-		//         }
-		//     }
-		// },
 
 		compress: {
 			main: {
@@ -102,7 +84,6 @@ module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt);
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-  	grunt.registerTask("default", ["uglify", "libsass", "autoprefixer", "compress", "watch"]);
-  	// grunt.registerTask("default", ["libsass", "autoprefixer", "compress", "browserSync", "watch"]);
+  	grunt.registerTask("default", ["uglify", "sass", "autoprefixer", "compress", "watch"]);
 
 };
